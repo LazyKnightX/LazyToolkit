@@ -17,6 +17,18 @@ namespace LazyToolkit
     }
   }
 
+  public class RandomTextInfo
+  {
+    public float weight;
+    public string text;
+
+    public RandomTextInfo(float weight, string text)
+    {
+      this.weight = weight;
+      this.text = text;
+    }
+  }
+
   public static class ActionUtility
   {
     /// <summary>
