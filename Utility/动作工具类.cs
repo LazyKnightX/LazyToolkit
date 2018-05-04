@@ -51,4 +51,27 @@ namespace LazyToolkit
       }
     }
   }
+
+  public static class 文字工具类
+  {
+    /// <summary>
+    /// Get random text by weight.
+    /// </summary>
+    /// <param name="infos"></param>
+    public static string 随机获取文本(随机文本信息[] infos)
+    {
+      var totalWeight = infos.Sum(info => info.随机权重);
+      var randomValue = Random.Range(0f, totalWeight);
+      var tick = 0f;
+      foreach (var info in infos)
+      {
+        tick += info.随机权重;
+        if (randomValue <= tick)
+        {
+          return info.随机文本;
+        }
+      }
+      return "";
+    }
+  }
 }

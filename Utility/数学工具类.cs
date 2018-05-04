@@ -32,12 +32,12 @@ namespace LazyToolkit
     /// <summary>
     ///
     /// </summary>
-    /// <param name="successRate">0.00 ~ 1.00</param>
+    /// <param name="成功率">0.00 ~ 1.00</param>
     /// <returns></returns>
-    public static bool 判断成功率(float successRate)
+    public static bool 判断成功率(float 成功率)
     {
       float tick = 获取随机浮点数(0, 1);
-      bool result = tick < successRate;
+      bool result = tick < 成功率;
       return result;
     }
   }
