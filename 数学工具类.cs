@@ -32,7 +32,7 @@ namespace LazyToolkit
     /// <summary>
     ///
     /// </summary>
-    /// <param name="成功率">0.00 ~ 1.00</param>
+    /// <param name="成功率">-N.00 ~ 1.00</param>
     /// <returns></returns>
     public static bool 判断成功率(float 成功率)
     {
